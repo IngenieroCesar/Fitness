@@ -9,7 +9,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 //De esta manera es como traemos el componente que hemos creado.
-import Exercises from './pages/Exercises'
+
+import App from './components/App';
 import 'bootstrap/dist/css/bootstrap.css'
 
 
@@ -20,4 +21,4 @@ const container = document.getElementById('root');
 
 // ReactDOM.render(__QUE__, __DONDE__);
 //Para traer un compónente debemos de meterlo en sus etquetas <component/>
-ReactDOM.render(<Exercises/>, container); 
+ReactDOM.render(<App/>, container); 

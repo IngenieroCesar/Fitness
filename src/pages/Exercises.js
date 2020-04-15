@@ -1,12 +1,12 @@
 import React from 'react';
 import ExerciseList from '../components/ExerciseList'
 import Welcome from '../components/Welcome'
+import AddExercise from '../components/AddExercise';
 
+//Usamos property initialicers
 class Exercises extends React.Component {
     //Estamos haciendo el llamado a un "API".
-    constructor(props){
-        super(props)
-        this.state = {
+    state = {
             data: [{
                 "id": 1,
                 "title": "Technique Guides",
@@ -31,7 +31,7 @@ class Exercises extends React.Component {
             }]
 
         }
-    }
+    
 
     render(){
         return(
@@ -41,6 +41,9 @@ class Exercises extends React.Component {
                 />
                 <ExerciseList
                     exercises={this.state.data}
+                />
+                <AddExercise
+                    url='/exercise/new'
                 />
 
 

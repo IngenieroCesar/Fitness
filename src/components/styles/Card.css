@@ -1,6 +1,7 @@
 .card {
-    border: none;
+    border: 10px;
     border-radius: 8px;
+    margin: 15px;
     /* background: url('../../images/yoga1.png') no-repeat, linear-gradient(to right, #A74CF2, #617BFB); */
 }
 .Fitness-User-Info {
